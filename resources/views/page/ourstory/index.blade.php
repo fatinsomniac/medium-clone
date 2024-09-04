@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Our Story'])
 
 @section('content')
     <div class="card">
-        <div class="card-header" style="background-color: #dbdbdb">
+        <div class="card-header">
             Everyone has a story to tell.
         </div>
         <div class="card-body">

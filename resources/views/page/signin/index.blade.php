@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Sign In'])
 
 @section('content')
     <div class="card">
