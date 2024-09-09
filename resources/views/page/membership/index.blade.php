@@ -3,12 +3,14 @@
 @section('content')
     <div class="row justify-content-center">
         <div class="col-3">
-            <div class="card">
+            <div class="card" style="border: 1px solid black;">
                 <div class="card-body">
-                    <div>
-                        <b>Single</b>
+                    <div class="card-title">
+                        <b>
+                            Single
+                        </b>
                     </div>
-                    <div class="mt-3">
+                    <div class="card-text mt-3">
                         Ini single
                     </div>
                     <hr>
@@ -19,12 +21,14 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="card">
+            <div class="card" style="border: 1px solid black;">
                 <div class="card-body">
-                    <div>
-                        <b>Premium</b>
+                    <div class="card-title">
+                        <b>
+                            Premium
+                        </b>
                     </div>
-                    <div class="mt-3">
+                    <div class="card-text mt-3">
                         Ini Premium
                     </div>
                     <hr>
@@ -35,12 +39,14 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="card">
+            <div class="card" style="border: 1px solid black;">
                 <div class="card-body">
-                    <div>
-                        <b>Business</b>
+                    <div class="card-title">
+                        <b>
+                            Business
+                        </b>
                     </div>
-                    <div class="mt-3">
+                    <div class="card-text mt-3">
                         Ini Business
                     </div>
                     <hr>

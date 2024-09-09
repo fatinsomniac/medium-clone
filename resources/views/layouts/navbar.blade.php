@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light" style="border-bottom: 1px solid black; border-left: transparent; border-right: transparent; border-top: transparent;">
   <div class="container-fluid">
-    <a class="navbar-brand ms-5" href="{{ route('home') }}" style="font-size: 2em;font-weight:700;">
+    <a class="navbar-brand ms-5" href="{{ route('home') }}" style="font-family: 'Charter', serif !important;font-size: 2em;font-weight:700;">
       Medium
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
