@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OurstoryController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\WriteController;
@@ -17,8 +18,9 @@ use App\Http\Controllers\SigninController;
 |
 */
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/', [OurstoryController::class, 'index'])->name('ourstory');
+Route::get('/ourstory', [OurstoryController::class, 'index'])->name('ourstory');
 Route::get('/membership', [MembershipController::class, 'index'])->name('membership');
 Route::get('/write', [WriteController::class, 'index'])->name('write');
 Route::get('/signin', [SigninController::class, 'index'])->name('signin');
