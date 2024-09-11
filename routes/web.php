@@ -21,6 +21,12 @@ use App\Http\Controllers\SigninController;
 Route::get('/', HomeController::class)->name('home');
 
 Route::get('/ourstory', [OurstoryController::class, 'index'])->name('ourstory');
+
 Route::get('/membership', [MembershipController::class, 'index'])->name('membership');
-Route::get('/write', [WriteController::class, 'index'])->name('write');
+
+Route::controller(WriteController::class)->group(function(){
+    Route::get('/write', 'index')->name('write');
+    Route::post('/write', 'store')->name('write.store');
+});
+
 Route::get('/signin', [SigninController::class, 'index'])->name('signin');
