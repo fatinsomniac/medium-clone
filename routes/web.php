@@ -18,7 +18,7 @@ use App\Http\Controllers\SigninController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', HomeController::class)->name('home');
 
 Route::get('/ourstory', [OurstoryController::class, 'index'])->name('ourstory');
 Route::get('/membership', [MembershipController::class, 'index'])->name('membership');

@@ -4,7 +4,7 @@
     <div style="display: flex; align-items: center;">
     <div style="flex: 1;">
         <h1 style="font-family: 'Charter', serif !important;font-weight: 500;font-size:8em;">
-            HUMAN <br />
+            Human <br />
             stories & ideas
         </h1>
         <p style="font-family: 'KievitOT', sans-serif !important;font-size:1.6em;">
