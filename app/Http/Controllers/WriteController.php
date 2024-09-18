@@ -5,27 +5,29 @@ namespace App\Http\Controllers;
 use App\Http\Requests\WriteRequest;
 use App\Models\Write;
 use Illuminate\Support\Str;
-use Illuminate\Http\Request;
 
 class WriteController extends Controller
 {
     public function index()
     {
-        return view('page.write.index');
+        $writes = Write::query()->latest()->get();
+
+        return view('page.write.index', [
+            'writes' => $writes,
+        ]);
     }
 
-    public function store(WriteRequest $request)
+    public function store(WriteRequest $writeRequest)
     {
-        $uuid = strtolower(Str::uuid(32));
+        $slug =  Str::slug($writeRequest->title);
 
         Write::create([
-            'uuid'     => $uuid,
-            'title'    => $request->title,
-            'author'   => $request->author,
-            'ur_story' => $request->ur_story,
+            'title'    => $writeRequest->title,
+            'slug'     => $slug,
+            'author'   => $writeRequest->author,
+            'ur_story' => $writeRequest->ur_story,
         ]);
 
         return back();
-        
     }
 }

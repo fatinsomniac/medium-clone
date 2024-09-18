@@ -24,10 +24,12 @@ class WriteRequest extends FormRequest
         return [
             'title' => [
                 'required',
+                'string',
                 'min:3',
             ],
             'author' => [
                 'required',
+                'string',
                 'min:3',
             ],
             'ur_story' => [

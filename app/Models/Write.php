@@ -9,8 +9,7 @@ class Write extends Model
 {
     use HasFactory;
 
-    protected $table = 'stories';
     protected $fillable = [
-        'uuid', 'title', 'author', 'ur_story',
+        'title', 'slug', 'author', 'ur_story'
     ];
 }
